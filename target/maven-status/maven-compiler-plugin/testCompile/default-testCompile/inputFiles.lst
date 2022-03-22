@@ -1,0 +1,17 @@
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/runners/UIRunner.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/BasePage.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/AllPages.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/utilities/ReusableMethods.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/utilities/ConfigReader.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/stepDefinitions/UIStepDefs.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/api/rawg/stepDefinitions/ApiStepDefs.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/stepDefinitions/UIHooks.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/api/rawg/util/ApiUtil.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/ProfilePage.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/runners/ApiRunner.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/api/rawg/stepDefinitions/ApiHooks.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/ProductDetailPage.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/utilities/Driver.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/RegistrationPage.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/HomePage.java
+/Users/ademugurlugelen/ademugurlugelen/la3ebCaseStudy/src/test/java/com/la3eb/pages/ProductListingPage.java
