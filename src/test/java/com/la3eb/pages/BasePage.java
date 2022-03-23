@@ -26,7 +26,6 @@ public abstract class BasePage {
 
     @FindBy(id = "email")
     public WebElement facebookEmailTextBox;
-
     public void loginWithFacebook(String email, String password){
         facebookEmailTextBox.sendKeys(email,Keys.TAB,password,Keys.TAB,Keys.ENTER);
     }
