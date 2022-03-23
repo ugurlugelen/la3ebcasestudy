@@ -66,7 +66,7 @@ Feature: Case_Study
     Given user goes to "production" landing page
     And user navigates to "Login" page
     And user clicks on "Facebook" button
-    When user completes login with "Facebook" using "facebookEmail" and "facebookPassword"
+    Then user completes login with "Facebook" using "facebookEmail" and "facebookPassword"
 
 
 

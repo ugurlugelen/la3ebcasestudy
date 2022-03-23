@@ -3,6 +3,7 @@ package com.la3eb.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
@@ -23,7 +24,10 @@ public abstract class BasePage {
         return Driver.getDriver().findElement(By.xpath("//span[text()='"+byTextName+"']"));
     }
 
+    @FindBy(id = "email")
+    public WebElement facebookEmailTextBox;
+
     public void loginWithFacebook(String email, String password){
-        Driver.getDriver().findElement(By.id("email")).sendKeys(email,Keys.TAB,password,Keys.TAB,Keys.ENTER);
+        facebookEmailTextBox.sendKeys(email,Keys.TAB,password,Keys.TAB,Keys.ENTER);
     }
 }

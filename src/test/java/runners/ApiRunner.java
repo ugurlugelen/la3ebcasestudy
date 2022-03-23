@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/apiFeatures",
         glue = "api/rawg/stepDefinitions",
-        tags = "@getgames",
-        dryRun = true,
+        tags = "@apiTest",
+        dryRun = false,
         stepNotifications = false,
         monochrome = false,
         publish = true

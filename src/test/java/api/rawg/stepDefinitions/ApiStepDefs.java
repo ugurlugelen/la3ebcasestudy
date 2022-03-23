@@ -3,11 +3,16 @@ package api.rawg.stepDefinitions;
 import api.rawg.util.ApiUtil;
 import io.cucumber.java.en.*;
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import static org.hamcrest.CoreMatchers.*;
+
+import org.junit.Assert;
 import utilities.ConfigReader;
+
+import java.util.List;
 
 public class ApiStepDefs {
     RequestSpecification requestSpecification;
@@ -26,6 +31,40 @@ public class ApiStepDefs {
     public void user_verifies_response_has_correct_output() {
         responseSpecification = ApiUtil.responseSpecification();
         response.then().spec(responseSpecification);
+        JsonPath js = response.jsonPath();
+
+        List<Integer> resultsID = js.getList("results.id");
+        List<String> resultsSlug = js.getList("results.slug");
+        List<String> resultsName = js.getList("results.name");
+        List<String> resultsReleased = js.getList("results.released");
+        List<Boolean> resultsTba = js.getList("results.tba");
+
+        for (Integer w : resultsID) {
+            if(String.valueOf(w) == null){
+                Assert.fail();
+            }
+        }
+        for (String w : resultsSlug) {
+            if(w == null){
+                Assert.fail();
+            }
+        }
+        for (String w : resultsName) {
+            if(w == null){
+                Assert.fail();
+            }
+        }
+        for (String w: resultsReleased) {
+            if(w == null){
+                Assert.fail();
+            }
+        }
+        for (Boolean w : resultsTba) {
+            if(String.valueOf(w) == null){
+                Assert.fail();
+            }
+        }
+
     }
 
 
